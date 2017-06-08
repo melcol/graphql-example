@@ -1,0 +1,66 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Graphql",
+		"_postman_id": "02da5d5d-06ae-397e-642b-7d0dc2ceb611",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fetchArticle",
+			"request": {
+				"url": "http://localhost:3000/graphql?",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:3000",
+						"description": ""
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"description": ""
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.8,el;q=0.6",
+						"description": ""
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+						"description": ""
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:3000/graphql?query=%7B%20%0A%20%20fetchArticle(id%3A10)%7B%0A%20%20%20%20%20id%0A%20%20%20%20title%20%0A%20%20%20%20body%0A%20%20%7D%0A%7D",
+						"description": ""
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"query\":\"{ \\n  fetchArticle(id:10){\\n     id\\n    title \\n    body\\n  }\\n}\",\"variables\":null,\"operationName\":null}"
+				},
+				"description": "Generated from a curl request: \ncurl 'http://localhost:3000/graphql?' -H 'Origin: http://localhost:3000' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.8,el;q=0.6' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36' -H 'content-type: application/json' -H 'accept: application/json' -H 'Referer: http://localhost:3000/graphql?query=%7B%20%0A%20%20fetchArticle(id%3A10)%7B%0A%20%20%20%20%20id%0A%20%20%20%20title%20%0A%20%20%20%20body%0A%20%20%7D%0A%7D' -H 'Connection: keep-alive' --data-binary '{\\\"query\\\":\\\"{ \\n  fetchArticle(id:10){\\n     id\\n    title \\n    body\\n  }\\n}\\\",\\\"variables\\\":null,\\\"operationName\\\":null}' --compressed"
+			},
+			"response": []
+		}
+	]
+}
