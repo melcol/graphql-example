@@ -8,7 +8,7 @@
 	},
 	"item": [
 		{
-			"name": "fetchArticle",
+			"name": "Fetch Articles",
 			"request": {
 				"url": "http://localhost:3000/graphql?",
 				"method": "POST",
@@ -30,7 +30,7 @@
 					},
 					{
 						"key": "User-Agent",
-						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
 						"description": ""
 					},
 					{
@@ -45,7 +45,7 @@
 					},
 					{
 						"key": "Referer",
-						"value": "http://localhost:3000/graphql?query=%7B%20%0A%20%20fetchArticle(id%3A10)%7B%0A%20%20%20%20%20id%0A%20%20%20%20title%20%0A%20%20%20%20body%0A%20%20%7D%0A%7D",
+						"value": "http://localhost:3000/graphql?query=%7B%20%0A%20%20fetchMultiRedisArticles(list%3A%22randomOrder%22%2Cfrom%3A8%2C%20to%3A9)%7B%0A%20%20%20%20id%20%20%0A%20%20%20%20title%0A%20%20%20%20body%0A%20%20%7D%0A%0A%7D",
 						"description": ""
 					},
 					{
@@ -56,9 +56,9 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"query\":\"{ \\n  fetchArticle(id:10){\\n     id\\n    title \\n    body\\n  }\\n}\",\"variables\":null,\"operationName\":null}"
+					"raw": "{\"query\":\"{ \\n  fetchMultiRedisArticles(list:\\\"randomOrder\\\",from:8, to:9){\\n    id  \\n    title\\n    body\\n  }\\n\\n}\",\"variables\":null,\"operationName\":null}"
 				},
-				"description": "Generated from a curl request: \ncurl 'http://localhost:3000/graphql?' -H 'Origin: http://localhost:3000' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.8,el;q=0.6' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36' -H 'content-type: application/json' -H 'accept: application/json' -H 'Referer: http://localhost:3000/graphql?query=%7B%20%0A%20%20fetchArticle(id%3A10)%7B%0A%20%20%20%20%20id%0A%20%20%20%20title%20%0A%20%20%20%20body%0A%20%20%7D%0A%7D' -H 'Connection: keep-alive' --data-binary '{\\\"query\\\":\\\"{ \\n  fetchArticle(id:10){\\n     id\\n    title \\n    body\\n  }\\n}\\\",\\\"variables\\\":null,\\\"operationName\\\":null}' --compressed"
+				"description": "Generated from a curl request: \ncurl 'http://localhost:3000/graphql?' -H 'Origin: http://localhost:3000' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.8,el;q=0.6' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36' -H 'content-type: application/json' -H 'accept: application/json' -H 'Referer: http://localhost:3000/graphql?query=%7B%20%0A%20%20fetchMultiRedisArticles(list%3A%22randomOrder%22%2Cfrom%3A8%2C%20to%3A9)%7B%0A%20%20%20%20id%20%20%0A%20%20%20%20title%0A%20%20%20%20body%0A%20%20%7D%0A%0A%7D' -H 'Connection: keep-alive' --data-binary '{\\\"query\\\":\\\"{ \\n  fetchMultiRedisArticles(list:\\\\\"randomOrder\\\\\",from:8, to:9){\\n    id  \\n    title\\n    body\\n  }\\n\\n}\\\",\\\"variables\\\":null,\\\"operationName\\\":null}' --compressed"
 			},
 			"response": []
 		}

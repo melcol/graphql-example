@@ -1,0 +1,4 @@
+node_modules/*
+test_files/*
+randomOrder.json
+redis/*
